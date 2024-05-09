@@ -25,7 +25,7 @@ void loop() {
   int sensorValue = analogRead(waterSensorPin);
 
   if (sensorValue >500) {
-    Serial.print("water water water!!!!!!!!! sensorValue: ");
+    Serial.print("Slip hazard! sensorValue: ");
     Serial.println(sensorValue);
     LcdTouch.drawButton(2, 170,  10, 140, 220, 10, RED, WHITE, "ALARM!", 3);  
     LcdTouch.drawButton(1, 10, 10 , 150, 220, 10, BLUE, BLACK, "Continue!", 2); 
